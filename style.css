@@ -1,0 +1,59 @@
+html, body {
+    margin-top: 2.5rem;
+	height: 100%;
+	display: flex;
+	/* align-items: center; */
+	justify-content: center;
+    text-align: center;
+	background-color: rgba(255, 222, 173, 0);
+    overflow: hidden;
+}
+
+.box {
+	display: flex;
+}
+
+.box .inner {
+	width: 1150px;
+	height: 70px;
+	line-height: 70px;
+	font-size: 4em;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bold;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.box .inner:first-child {
+	background-color: rgba(92, 152, 205, 0.526);
+	color: darkred;
+	transform-origin: right;
+	transform: perspective(100px) rotateY(-15deg);
+}
+
+.box .inner:last-child {
+	background-color: rgba(128, 173, 240, 0.605);
+	color: rgb(251, 226, 193);
+	transform-origin: left;
+	transform: perspective(100px) rotateY(15deg);
+}
+
+.box .inner span {
+	position: absolute;
+	animation: marquee 10s linear infinite;
+}
+
+.box .inner:first-child span {
+	animation-delay: 5s;
+	left: -100%;
+}
+
+@keyframes marquee {
+	from {
+		left: 100%;
+	}
+
+	to {
+		left: -100%;
+	}
+}
