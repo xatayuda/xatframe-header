@@ -40,11 +40,11 @@ html, body {
 
 .box .inner span {
 	position: absolute;
-	animation: marquee 10s linear infinite;
+	animation: marquee 20s linear infinite;
 }
 
 .box .inner:first-child span {
-	animation-delay: 5s;
+	animation-delay: 10s;
 	left: -100%;
 }
 
